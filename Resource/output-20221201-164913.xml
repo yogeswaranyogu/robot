@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20221201 16:49:13.718" rpa="false" schemaversion="3">
+<suite id="s1" name="site details Test manage" source="E:\Microsoftvs\Resource\site_details_Test_manage.robot">
+<test id="s1-t1" name="TC001:verify Login With_site_Details_Credentials:" line="6">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_Login_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 16:49:19.032" level="INFO">Set test documentation to:
+Executing_Login_Testcase</msg>
+<status status="PASS" starttime="20221201 16:49:19.032" endtime="20221201 16:49:19.032"/>
+</kw>
+<kw name="Login With_Credentials_Site_Details:" library="site_details">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 16:49:19.033" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="FAIL" starttime="20221201 16:49:27.282" endtime="20221201 16:49:27.283"/>
+</kw>
+<msg timestamp="20221201 16:49:27.283" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<status status="FAIL" starttime="20221201 16:49:19.033" endtime="20221201 16:49:27.285"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20221201 16:49:27.285" endtime="20221201 16:49:27.285"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:uname</arg>
+<arg>${app}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221201 16:49:27.286" endtime="20221201 16:49:27.286"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221201 16:49:27.286" endtime="20221201 16:49:27.286"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221201 16:49:27.287" endtime="20221201 16:49:27.287"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221201 16:49:27.287" endtime="20221201 16:49:27.287"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Login_site}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221201 16:49:27.287" endtime="20221201 16:49:27.288"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221201 16:49:27.288" endtime="20221201 16:49:27.288"/>
+</kw>
+<status status="FAIL" starttime="20221201 16:49:19.032" endtime="20221201 16:49:27.289"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Login_sucessful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20221201 16:49:27.289" endtime="20221201 16:49:27.290"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>ExecuteLoginpage</arg>
+<doc>Sets message for the current test case.</doc>
+<status status="NOT RUN" starttime="20221201 16:49:27.290" endtime="20221201 16:49:27.290"/>
+</kw>
+<doc>Executing_Login_Testcase</doc>
+<tag>Login_site_Details_case</tag>
+<status status="FAIL" starttime="20221201 16:49:19.030" endtime="20221201 16:49:27.292">Execution terminated by signal</status>
+</test>
+<test id="s1-t2" name="TC002:verify Site_details_for_Site_Management_View_option:" line="12">
+<tag>robot:exit</tag>
+<tag>Site_details_for_Site_Management_View_option</tag>
+<status status="FAIL" starttime="20221201 16:49:27.298" endtime="20221201 16:49:27.300">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t3" name="TC003:verify Site_details_for_Site_Management_Edit_option:" line="19">
+<tag>robot:exit</tag>
+<tag>Site_details_for_Site_Management_Edit_option</tag>
+<status status="FAIL" starttime="20221201 16:49:27.305" endtime="20221201 16:49:27.307">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t4" name="TC004:verify Site_details_for_Site_Management_Delete_option:" line="26">
+<tag>robot:exit</tag>
+<tag>Site_details_for_Site_Management_Delete_option</tag>
+<status status="FAIL" starttime="20221201 16:49:27.311" endtime="20221201 16:49:27.315">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t5" name="TC005:verify Site_details_for_Site_Management_Sign_Out_option:" line="33">
+<tag>Login_Fota_case</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20221201 16:49:27.320" endtime="20221201 16:49:27.323">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t6" name="TC006:verify_Login_With_App_Details_Credentials:" line="41">
+<tag>Login_app_Details_case</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20221201 16:49:27.326" endtime="20221201 16:49:27.329">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t7" name="TC007:verify_App_Details:" line="48">
+<tag>App_Details_case</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20221201 16:49:27.333" endtime="20221201 16:49:27.334">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t8" name="TC008:verify Site_details_for_Site_Management_View_option:" line="56">
+<tag>robot:exit</tag>
+<tag>Site_details_for_Site_Management_View_option</tag>
+<status status="FAIL" starttime="20221201 16:49:27.338" endtime="20221201 16:49:27.339">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t9" name="TC009:verify Site_details_for_Site_Management_Edit_option:" line="64">
+<tag>robot:exit</tag>
+<tag>Site_details_for_Site_Management_Edit_option</tag>
+<status status="FAIL" starttime="20221201 16:49:27.342" endtime="20221201 16:49:27.346">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t10" name="TC010:verify Site_details_for_Site_Management_Delete_option:" line="72">
+<tag>Application_details_for_Application_Management_Delete_option</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20221201 16:49:27.351" endtime="20221201 16:49:27.352">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t11" name="TC011:Verify_Appliaction_Details_Search_option:" line="82">
+<tag>Application_details_for_Application_Management_Search_option</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20221201 16:49:27.355" endtime="20221201 16:49:27.357">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t12" name="TC012:Verify_Application_Details_Sign_out:" line="91">
+<tag>Application_details_for_Application_Management_Search_option</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20221201 16:49:27.362" endtime="20221201 16:49:27.364">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t13" name="TC013:Verify_Application_Management_In_Site_Details_Search_option:" line="100">
+<tag>Application_Management_</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20221201 16:49:27.367" endtime="20221201 16:49:27.369">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t14" name="TC014:Verify_Application_Management_In_Site_Details_View_option:" line="108">
+<tag>Application_Management_</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20221201 16:49:27.372" endtime="20221201 16:49:27.376">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-t15" name="TC015:Application_Management_In_Site_Details:" line="116">
+<tag>Application_Management_</tag>
+<tag>robot:exit</tag>
+<status status="FAIL" starttime="20221201 16:49:27.380" endtime="20221201 16:49:27.382">Test execution stopped due to a fatal error.</status>
+</test>
+<status status="FAIL" starttime="20221201 16:49:13.725" endtime="20221201 16:49:27.386"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="15" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0" info="combined" combined="NOT robot:exit">NOT robot:exit</stat>
+<stat pass="0" fail="1" skip="0">App_Details_case</stat>
+<stat pass="0" fail="1" skip="0">Application_details_for_Application_Management_Delete_option</stat>
+<stat pass="0" fail="2" skip="0">Application_details_for_Application_Management_Search_option</stat>
+<stat pass="0" fail="3" skip="0">Application_Management_</stat>
+<stat pass="0" fail="1" skip="0">Login_app_Details_case</stat>
+<stat pass="0" fail="1" skip="0">Login_Fota_case</stat>
+<stat pass="0" fail="1" skip="0">Login_site_Details_case</stat>
+<stat pass="0" fail="1" skip="0">Site_details_for_Site_Management_Delete_option</stat>
+<stat pass="0" fail="2" skip="0">Site_details_for_Site_Management_Edit_option</stat>
+<stat pass="0" fail="2" skip="0">Site_details_for_Site_Management_View_option</stat>
+</tag>
+<suite>
+<stat pass="0" fail="15" skip="0" id="s1" name="site details Test manage">site details Test manage</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221201 16:49:27.283" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+</errors>
+</robot>

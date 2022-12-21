@@ -1,0 +1,23 @@
+{
+	"Temperature": [{
+		"Value": "01"
+	}],
+	"Light": [{
+		"Value": "01"
+	}],
+        "Pressure": [{
+		"Value": "01"
+	}],
+        "Humidity": [{
+		"Value": "01"
+	}],
+	"Accelerometer": [{
+		"Value": "01"
+	}],
+	"Gyrometer": [{
+		"Value": "01"
+	}],
+	"Acoustic": [{
+		"Value": "01"
+	}]
+}

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20221125 13:37:13.841" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Interactive Console" source="c:\Users\Admin\.vscode\extensions\robocorp.robotframework-lsp-1.5.0\src\robotframework_ls\vendored\robotframework_interactive\robot_interactive_console.robot">
+<test id="s1-t1" name="Default Task/Test" line="5">
+<kw name="Interpreter Main Loop" library="MainLoop">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_Login_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<status status="PASS" starttime="20221125 13:37:15.519" endtime="20221125 13:37:15.519"/>
+</kw>
+<kw name="Login With Fota_Credentials_Release_Manager:">
+<msg timestamp="20221125 13:37:15.523" level="FAIL">No keyword with name 'Login With Fota_Credentials_Release_Manager:' found. Did you try using keyword 'BuiltIn.Log' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" starttime="20221125 13:37:15.523" endtime="20221125 13:37:15.523"/>
+</kw>
+<kw name="Fota_release_manager_Invaild_case_atleast_one_device:">
+<status status="NOT RUN" starttime="20221125 13:37:15.529" endtime="20221125 13:37:15.529"/>
+</kw>
+<status status="PASS" starttime="20221125 13:37:13.875" endtime="20221125 13:37:18.606"/>
+</kw>
+<doc>Executing_Login_Testcase</doc>
+<status status="PASS" starttime="20221125 13:37:13.874" endtime="20221125 13:37:18.608"/>
+</test>
+<status status="PASS" starttime="20221125 13:37:13.844" endtime="20221125 13:37:18.611"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Interactive Console">Robot Interactive Console</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

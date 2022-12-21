@@ -1,0 +1,1 @@
+{"Humidity": "", "Pressure": "", "Temperature": "", "Acoustic": "", "Light": ""}

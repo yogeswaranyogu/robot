@@ -1,0 +1,1278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20221201 18:18:54.036" rpa="false" schemaversion="3">
+<suite id="s1" name="Usermanagement" source="E:\Microsoftvs\Usermanagement.robot">
+<test id="s1-t1" name="TC001:verify Login With Orgmanagement Credentials:" line="7">
+<kw name="Login With Org Credentials:" library="usertestcase" type="SETUP">
+<kw name="Open Browser" library="RPA.Browser">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 18:18:56.388" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 18:18:56.388" endtime="20221201 18:18:59.733"/>
+</kw>
+<kw name="Maximize Browser Window" library="RPA.Browser">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 18:18:59.733" endtime="20221201 18:18:59.873"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>id:uname</arg>
+<arg>${app}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:18:59.874" level="INFO">Typing text 'arorg' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 18:18:59.873" endtime="20221201 18:19:00.149"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:00.149" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 18:19:00.200" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 18:19:00.285" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 18:19:00.149" endtime="20221201 18:19:00.285"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:00.286" level="INFO">Clicking button 'xpath://*[@id="user_validation_form"]/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 18:19:00.286" endtime="20221201 18:19:01.193"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:19:04.205" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221201 18:19:01.194" endtime="20221201 18:19:04.205"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:04.206" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]'.</msg>
+<status status="PASS" starttime="20221201 18:19:04.205" endtime="20221201 18:19:04.336"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:04.337" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20221201 18:19:04.336" endtime="20221201 18:19:04.442"/>
+</kw>
+<status status="PASS" starttime="20221201 18:18:56.387" endtime="20221201 18:19:04.443"/>
+</kw>
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_Login_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 18:19:04.445" level="INFO">Set test documentation to:
+Executing_Login_Testcase</msg>
+<status status="PASS" starttime="20221201 18:19:04.444" endtime="20221201 18:19:04.445"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Login_sucessful</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221201 18:19:04.447" level="INFO">Login_sucessful</msg>
+<status status="PASS" starttime="20221201 18:19:04.446" endtime="20221201 18:19:04.447"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>ExecuteLoginpage</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20221201 18:19:04.449" level="INFO">Set test message to:
+ExecuteLoginpage</msg>
+<status status="PASS" starttime="20221201 18:19:04.448" endtime="20221201 18:19:04.449"/>
+</kw>
+<doc>Executing_Login_Testcase</doc>
+<tag>Login_Sitemanagement_case</tag>
+<status status="PASS" starttime="20221201 18:18:56.386" endtime="20221201 18:19:04.449">ExecuteLoginpage</status>
+</test>
+<test id="s1-t2" name="TC002:verify user_management_add_user:" line="15">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_Login_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 18:19:04.453" level="INFO">Set test documentation to:
+Executing_Login_Testcase</msg>
+<status status="PASS" starttime="20221201 18:19:04.453" endtime="20221201 18:19:04.454"/>
+</kw>
+<kw name="Login With Org Credentials:" library="usertestcase">
+<kw name="Open Browser" library="RPA.Browser">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 18:19:04.458" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 18:19:04.457" endtime="20221201 18:19:08.987"/>
+</kw>
+<kw name="Maximize Browser Window" library="RPA.Browser">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 18:19:08.987" endtime="20221201 18:19:09.118"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>id:uname</arg>
+<arg>${app}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:09.118" level="INFO">Typing text 'arorg' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 18:19:09.118" endtime="20221201 18:19:09.301"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:09.302" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 18:19:09.353" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 18:19:09.438" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 18:19:09.301" endtime="20221201 18:19:09.438"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:09.438" level="INFO">Clicking button 'xpath://*[@id="user_validation_form"]/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 18:19:09.438" endtime="20221201 18:19:10.102"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:19:13.114" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221201 18:19:10.103" endtime="20221201 18:19:13.114"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:13.115" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]'.</msg>
+<status status="PASS" starttime="20221201 18:19:13.114" endtime="20221201 18:19:13.207"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:13.208" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20221201 18:19:13.207" endtime="20221201 18:19:13.280"/>
+</kw>
+<status status="PASS" starttime="20221201 18:19:04.455" endtime="20221201 18:19:13.281"/>
+</kw>
+<kw name="user_management_add_user:" library="usertestcase">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:19:15.289" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:19:13.283" endtime="20221201 18:19:15.289"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[1]/aside/section/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:15.290" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[1]/aside/section/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221201 18:19:15.289" endtime="20221201 18:19:17.384"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:19:19.398" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:19:17.384" endtime="20221201 18:19:19.398"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[1]/div[2]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:19.399" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/section/div[1]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20221201 18:19:19.398" endtime="20221201 18:19:20.266"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[1]/input</arg>
+<arg>Yogesh</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:20.268" level="INFO">Typing text 'Yogesh' into text field 'xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[1]/input'.</msg>
+<status status="PASS" starttime="20221201 18:19:20.267" endtime="20221201 18:19:20.430"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[2]/input</arg>
+<arg>yogu</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:20.431" level="INFO">Typing text 'yogu' into text field 'xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[2]/input'.</msg>
+<status status="PASS" starttime="20221201 18:19:20.430" endtime="20221201 18:19:20.563"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[3]/input</arg>
+<arg>Yogeswaran@Techtez.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:20.564" level="INFO">Typing text 'Yogeswaran@Techtez.com' into text field 'xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[3]/input'.</msg>
+<status status="PASS" starttime="20221201 18:19:20.564" endtime="20221201 18:19:20.743"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[4]/input</arg>
+<arg>9876543211</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:20.744" level="INFO">Typing text '9876543211' into text field 'xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[4]/input'.</msg>
+<status status="PASS" starttime="20221201 18:19:20.743" endtime="20221201 18:19:20.883"/>
+</kw>
+<status status="PASS" starttime="20221201 18:19:13.282" endtime="20221201 18:19:20.883"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Login_sucessful</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221201 18:19:20.884" level="INFO">Login_sucessful</msg>
+<status status="PASS" starttime="20221201 18:19:20.884" endtime="20221201 18:19:20.885"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>ExecuteLoginpage</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20221201 18:19:20.886" level="INFO">Set test message to:
+ExecuteLoginpage</msg>
+<status status="PASS" starttime="20221201 18:19:20.885" endtime="20221201 18:19:20.886"/>
+</kw>
+<doc>Executing_Login_Testcase</doc>
+<tag>Login_Sitemanagement_case</tag>
+<status status="PASS" starttime="20221201 18:19:04.451" endtime="20221201 18:19:20.886">ExecuteLoginpage</status>
+</test>
+<test id="s1-t3" name="TC003:verify_user_management_add_user_ID_Invaild_:" line="25">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_Login_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 18:19:20.889" level="INFO">Set test documentation to:
+Executing_Login_Testcase</msg>
+<status status="PASS" starttime="20221201 18:19:20.889" endtime="20221201 18:19:20.889"/>
+</kw>
+<kw name="Login With Org Credentials:" library="usertestcase">
+<kw name="Open Browser" library="RPA.Browser">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 18:19:20.890" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 18:19:20.890" endtime="20221201 18:19:43.670"/>
+</kw>
+<kw name="Maximize Browser Window" library="RPA.Browser">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 18:19:43.671" endtime="20221201 18:19:43.863"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>id:uname</arg>
+<arg>${app}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:43.864" level="INFO">Typing text 'arorg' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 18:19:43.863" endtime="20221201 18:19:44.086"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:44.087" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 18:19:44.144" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 18:19:44.232" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 18:19:44.086" endtime="20221201 18:19:44.232"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:44.233" level="INFO">Clicking button 'xpath://*[@id="user_validation_form"]/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 18:19:44.233" endtime="20221201 18:19:45.036"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:19:48.048" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221201 18:19:45.037" endtime="20221201 18:19:48.048"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:48.048" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]'.</msg>
+<status status="PASS" starttime="20221201 18:19:48.048" endtime="20221201 18:19:48.128"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:48.128" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20221201 18:19:48.128" endtime="20221201 18:19:48.204"/>
+</kw>
+<status status="PASS" starttime="20221201 18:19:20.889" endtime="20221201 18:19:48.205"/>
+</kw>
+<kw name="user_management_add_user_ID_Invaild_:" library="usertestcase">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:19:50.212" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:19:48.208" endtime="20221201 18:19:50.212"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[1]/aside/section/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:50.212" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[1]/aside/section/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221201 18:19:50.212" endtime="20221201 18:19:50.981"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:19:52.995" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:19:50.981" endtime="20221201 18:19:52.995"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[1]/div[2]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:52.996" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/section/div[1]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20221201 18:19:52.995" endtime="20221201 18:19:53.698"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:19:55.699" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:19:53.699" endtime="20221201 18:19:55.699"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[2]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:55.700" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/section/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 18:19:55.699" endtime="20221201 18:19:55.759"/>
+</kw>
+<status status="PASS" starttime="20221201 18:19:48.206" endtime="20221201 18:19:55.759"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Login_sucessful</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221201 18:19:55.761" level="INFO">Login_sucessful</msg>
+<status status="PASS" starttime="20221201 18:19:55.760" endtime="20221201 18:19:55.761"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>ExecuteLoginpage</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20221201 18:19:55.762" level="INFO">Set test message to:
+ExecuteLoginpage</msg>
+<status status="PASS" starttime="20221201 18:19:55.762" endtime="20221201 18:19:55.762"/>
+</kw>
+<doc>Executing_Login_Testcase</doc>
+<tag>Login_Sitemanagement_case</tag>
+<status status="PASS" starttime="20221201 18:19:20.888" endtime="20221201 18:19:55.763">ExecuteLoginpage</status>
+</test>
+<test id="s1-t4" name="TC004:verify_User_management_add_user_displayname_invaild:" line="34">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_UserManagement_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 18:19:55.767" level="INFO">Set test documentation to:
+Executing_UserManagement_Testcase</msg>
+<status status="PASS" starttime="20221201 18:19:55.766" endtime="20221201 18:19:55.767"/>
+</kw>
+<kw name="Login With Org Credentials:" library="usertestcase">
+<kw name="Open Browser" library="RPA.Browser">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 18:19:55.768" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 18:19:55.768" endtime="20221201 18:19:58.971"/>
+</kw>
+<kw name="Maximize Browser Window" library="RPA.Browser">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 18:19:58.972" endtime="20221201 18:19:59.158"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>id:uname</arg>
+<arg>${app}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:59.159" level="INFO">Typing text 'arorg' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 18:19:59.158" endtime="20221201 18:19:59.361"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:59.362" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 18:19:59.430" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 18:19:59.524" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 18:19:59.361" endtime="20221201 18:19:59.525"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 18:19:59.525" level="INFO">Clicking button 'xpath://*[@id="user_validation_form"]/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 18:19:59.525" endtime="20221201 18:20:00.375"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:20:03.379" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221201 18:20:00.375" endtime="20221201 18:20:03.379"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:03.380" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]'.</msg>
+<status status="PASS" starttime="20221201 18:20:03.380" endtime="20221201 18:20:03.547"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:03.548" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20221201 18:20:03.547" endtime="20221201 18:20:03.662"/>
+</kw>
+<status status="PASS" starttime="20221201 18:19:55.767" endtime="20221201 18:20:03.663"/>
+</kw>
+<kw name="User_management_add_user_displayname_invaild:" library="usertestcase">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:20:05.678" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:20:03.665" endtime="20221201 18:20:05.678"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[1]/aside/section/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:05.679" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[1]/aside/section/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221201 18:20:05.678" endtime="20221201 18:20:06.579"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:20:08.583" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:20:06.580" endtime="20221201 18:20:08.583"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[1]/div[2]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:08.584" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/section/div[1]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20221201 18:20:08.583" endtime="20221201 18:20:09.193"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:20:11.208" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:20:09.193" endtime="20221201 18:20:11.208"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[1]/input</arg>
+<arg>Yogesh</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:11.209" level="INFO">Typing text 'Yogesh' into text field 'xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[1]/input'.</msg>
+<status status="PASS" starttime="20221201 18:20:11.208" endtime="20221201 18:20:11.349"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[2]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:11.350" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/section/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 18:20:11.350" endtime="20221201 18:20:11.419"/>
+</kw>
+<status status="PASS" starttime="20221201 18:20:03.664" endtime="20221201 18:20:11.420"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>User_management_add_user_displayname_invaild_sucessful</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221201 18:20:11.421" level="INFO">User_management_add_user_displayname_invaild_sucessful</msg>
+<status status="PASS" starttime="20221201 18:20:11.420" endtime="20221201 18:20:11.421"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>User_management_add_user_displayname_invaild</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20221201 18:20:11.422" level="INFO">Set test message to:
+User_management_add_user_displayname_invaild</msg>
+<status status="PASS" starttime="20221201 18:20:11.421" endtime="20221201 18:20:11.422"/>
+</kw>
+<doc>Executing_UserManagement_Testcase</doc>
+<tag>Login_User_management_add_user_displayname_invaild_case</tag>
+<status status="PASS" starttime="20221201 18:19:55.765" endtime="20221201 18:20:11.423">User_management_add_user_displayname_invaild</status>
+</test>
+<test id="s1-t5" name="TC005:verify_User_management_add_user_Email_invaild:" line="42">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_UserManagement_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 18:20:11.429" level="INFO">Set test documentation to:
+Executing_UserManagement_Testcase</msg>
+<status status="PASS" starttime="20221201 18:20:11.429" endtime="20221201 18:20:11.430"/>
+</kw>
+<kw name="Login With Org Credentials:" library="usertestcase">
+<kw name="Open Browser" library="RPA.Browser">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 18:20:11.434" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 18:20:11.434" endtime="20221201 18:20:14.503"/>
+</kw>
+<kw name="Maximize Browser Window" library="RPA.Browser">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 18:20:14.503" endtime="20221201 18:20:14.664"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>id:uname</arg>
+<arg>${app}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:14.666" level="INFO">Typing text 'arorg' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 18:20:14.664" endtime="20221201 18:20:14.851"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:14.852" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 18:20:14.908" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 18:20:15.027" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 18:20:14.851" endtime="20221201 18:20:15.027"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:15.028" level="INFO">Clicking button 'xpath://*[@id="user_validation_form"]/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 18:20:15.027" endtime="20221201 18:20:15.990"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:20:18.991" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221201 18:20:15.991" endtime="20221201 18:20:18.991"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:18.991" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]'.</msg>
+<status status="PASS" starttime="20221201 18:20:18.991" endtime="20221201 18:20:19.073"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:19.074" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20221201 18:20:19.073" endtime="20221201 18:20:19.137"/>
+</kw>
+<status status="PASS" starttime="20221201 18:20:11.432" endtime="20221201 18:20:19.138"/>
+</kw>
+<kw name="User_management_add_user_Email_invaild:" library="usertestcase">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:20:21.140" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:20:19.139" endtime="20221201 18:20:21.140"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[1]/aside/section/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:21.141" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[1]/aside/section/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221201 18:20:21.140" endtime="20221201 18:20:21.920"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:20:23.929" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:20:21.920" endtime="20221201 18:20:23.929"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[1]/div[2]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:23.930" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/section/div[1]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20221201 18:20:23.930" endtime="20221201 18:20:24.726"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:20:26.736" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:20:24.726" endtime="20221201 18:20:26.736"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[1]/input</arg>
+<arg>Yogesh</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:26.736" level="INFO">Typing text 'Yogesh' into text field 'xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[1]/input'.</msg>
+<status status="PASS" starttime="20221201 18:20:26.736" endtime="20221201 18:20:26.941"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:20:28.951" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:20:26.941" endtime="20221201 18:20:28.952"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[2]/input</arg>
+<arg>yogu</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:28.953" level="INFO">Typing text 'yogu' into text field 'xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[2]/input'.</msg>
+<status status="PASS" starttime="20221201 18:20:28.953" endtime="20221201 18:20:29.158"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[2]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:29.159" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/section/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 18:20:29.158" endtime="20221201 18:20:29.280"/>
+</kw>
+<status status="PASS" starttime="20221201 18:20:19.138" endtime="20221201 18:20:29.281"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>User_management_add_user_Email_invaild_sucessful</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221201 18:20:29.284" level="INFO">User_management_add_user_Email_invaild_sucessful</msg>
+<status status="PASS" starttime="20221201 18:20:29.284" endtime="20221201 18:20:29.284"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>User_management_add_user_Email_invaild</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20221201 18:20:29.286" level="INFO">Set test message to:
+User_management_add_user_Email_invaild</msg>
+<status status="PASS" starttime="20221201 18:20:29.285" endtime="20221201 18:20:29.286"/>
+</kw>
+<doc>Executing_UserManagement_Testcase</doc>
+<tag>Login_User_management_add_user_Email_invaild_case</tag>
+<status status="PASS" starttime="20221201 18:20:11.427" endtime="20221201 18:20:29.293">User_management_add_user_Email_invaild</status>
+</test>
+<test id="s1-t6" name="TC006:verify_User_management_add_user_Phone_number_invaild:" line="50">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_UserManagement_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 18:20:29.299" level="INFO">Set test documentation to:
+Executing_UserManagement_Testcase</msg>
+<status status="PASS" starttime="20221201 18:20:29.299" endtime="20221201 18:20:29.300"/>
+</kw>
+<kw name="Login With Org Credentials:" library="usertestcase">
+<kw name="Open Browser" library="RPA.Browser">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 18:20:29.301" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 18:20:29.300" endtime="20221201 18:20:33.891"/>
+</kw>
+<kw name="Maximize Browser Window" library="RPA.Browser">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 18:20:33.892" endtime="20221201 18:20:34.033"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>id:uname</arg>
+<arg>${app}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:34.034" level="INFO">Typing text 'arorg' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 18:20:34.033" endtime="20221201 18:20:34.260"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:34.261" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 18:20:34.339" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 18:20:34.450" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 18:20:34.260" endtime="20221201 18:20:34.450"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:34.451" level="INFO">Clicking button 'xpath://*[@id="user_validation_form"]/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 18:20:34.451" endtime="20221201 18:20:35.179"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:20:38.183" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221201 18:20:35.179" endtime="20221201 18:20:38.183"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:38.184" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]'.</msg>
+<status status="PASS" starttime="20221201 18:20:38.183" endtime="20221201 18:20:38.285"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:38.286" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20221201 18:20:38.285" endtime="20221201 18:20:38.379"/>
+</kw>
+<status status="PASS" starttime="20221201 18:20:29.300" endtime="20221201 18:20:38.380"/>
+</kw>
+<kw name="User_management_add_user_Phone_number_invaild:" library="usertestcase">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:20:40.390" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:20:38.382" endtime="20221201 18:20:40.390"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[1]/aside/section/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:40.391" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[1]/aside/section/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221201 18:20:40.390" endtime="20221201 18:20:41.368"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:20:43.372" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:20:41.369" endtime="20221201 18:20:43.372"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[1]/div[2]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:43.373" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/section/div[1]/div[2]/button[2]'.</msg>
+<status status="PASS" starttime="20221201 18:20:43.372" endtime="20221201 18:20:43.983"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[1]/input</arg>
+<arg>Yogesh</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:43.984" level="INFO">Typing text 'Yogesh' into text field 'xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[1]/input'.</msg>
+<status status="PASS" starttime="20221201 18:20:43.983" endtime="20221201 18:20:44.195"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[2]/input</arg>
+<arg>yogu</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:44.196" level="INFO">Typing text 'yogu' into text field 'xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[2]/input'.</msg>
+<status status="PASS" starttime="20221201 18:20:44.195" endtime="20221201 18:20:44.346"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[3]/input</arg>
+<arg>Rombo@gmail.cm</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:44.347" level="INFO">Typing text 'Rombo@gmail.cm' into text field 'xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[3]/input'.</msg>
+<status status="PASS" starttime="20221201 18:20:44.346" endtime="20221201 18:20:44.532"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[4]/input</arg>
+<arg>987654321121</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:44.533" level="INFO">Typing text '987654321121' into text field 'xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[4]/input'.</msg>
+<status status="PASS" starttime="20221201 18:20:44.533" endtime="20221201 18:20:44.708"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:20:46.719" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:20:44.708" endtime="20221201 18:20:46.719"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[2]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:46.720" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/section/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 18:20:46.719" endtime="20221201 18:20:46.783"/>
+</kw>
+<status status="PASS" starttime="20221201 18:20:38.381" endtime="20221201 18:20:46.784"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>User_management_add_user_Phone_number_invaild_sucessful</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221201 18:20:46.786" level="INFO">User_management_add_user_Phone_number_invaild_sucessful</msg>
+<status status="PASS" starttime="20221201 18:20:46.785" endtime="20221201 18:20:46.786"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>User_management_add_user_Phone_number_invaild</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20221201 18:20:46.787" level="INFO">Set test message to:
+User_management_add_user_Phone_number_invaild</msg>
+<status status="PASS" starttime="20221201 18:20:46.787" endtime="20221201 18:20:46.787"/>
+</kw>
+<doc>Executing_UserManagement_Testcase</doc>
+<tag>Login_User_management_add_user_Phone_number_invaild_case</tag>
+<status status="PASS" starttime="20221201 18:20:29.298" endtime="20221201 18:20:46.788">User_management_add_user_Phone_number_invaild</status>
+</test>
+<test id="s1-t7" name="TC007:verify_User_management_View_Option:" line="58">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_UserManagement_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 18:20:46.796" level="INFO">Set test documentation to:
+Executing_UserManagement_Testcase</msg>
+<status status="PASS" starttime="20221201 18:20:46.793" endtime="20221201 18:20:46.797"/>
+</kw>
+<kw name="Login With Org Credentials:" library="usertestcase">
+<kw name="Open Browser" library="RPA.Browser">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 18:20:46.799" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 18:20:46.799" endtime="20221201 18:20:51.968"/>
+</kw>
+<kw name="Maximize Browser Window" library="RPA.Browser">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 18:20:51.969" endtime="20221201 18:20:52.143"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>id:uname</arg>
+<arg>${app}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:52.144" level="INFO">Typing text 'arorg' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 18:20:52.143" endtime="20221201 18:20:52.379"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:52.381" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 18:20:52.466" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 18:20:52.615" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 18:20:52.380" endtime="20221201 18:20:52.616"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:52.617" level="INFO">Clicking button 'xpath://*[@id="user_validation_form"]/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 18:20:52.616" endtime="20221201 18:20:53.420"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:20:56.425" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221201 18:20:53.420" endtime="20221201 18:20:56.425"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:56.426" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]'.</msg>
+<status status="PASS" starttime="20221201 18:20:56.425" endtime="20221201 18:20:56.536"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:56.537" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20221201 18:20:56.537" endtime="20221201 18:20:56.610"/>
+</kw>
+<status status="PASS" starttime="20221201 18:20:46.798" endtime="20221201 18:20:56.611"/>
+</kw>
+<kw name="User_management_View_Option:" library="usertestcase">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:20:58.625" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:20:56.612" endtime="20221201 18:20:58.625"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[1]/aside/section/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:20:58.626" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[1]/aside/section/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221201 18:20:58.626" endtime="20221201 18:20:59.560"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:21:01.565" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:20:59.561" endtime="20221201 18:21:01.565"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/div/div/div/div/div[2]/div/table/tbody/tr[1]/td[7]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:01.566" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/div/div/div/div/div[2]/div/table/tbody/tr[1]/td[7]/button[1]'.</msg>
+<status status="PASS" starttime="20221201 18:21:01.565" endtime="20221201 18:21:03.047"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:21:05.052" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:21:03.047" endtime="20221201 18:21:05.052"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:05.053" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/section/button'.</msg>
+<status status="PASS" starttime="20221201 18:21:05.052" endtime="20221201 18:21:05.801"/>
+</kw>
+<status status="PASS" starttime="20221201 18:20:56.611" endtime="20221201 18:21:05.802"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>User_management_View_Option_sucessful</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221201 18:21:05.803" level="INFO">User_management_View_Option_sucessful</msg>
+<status status="PASS" starttime="20221201 18:21:05.802" endtime="20221201 18:21:05.803"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>User_management_View_Option</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20221201 18:21:05.804" level="INFO">Set test message to:
+User_management_View_Option</msg>
+<status status="PASS" starttime="20221201 18:21:05.804" endtime="20221201 18:21:05.804"/>
+</kw>
+<doc>Executing_UserManagement_Testcase</doc>
+<tag>Login_User_management_View_Option_case</tag>
+<status status="PASS" starttime="20221201 18:20:46.792" endtime="20221201 18:21:05.805">User_management_View_Option</status>
+</test>
+<test id="s1-t8" name="TC008:verify_User_management_Edit_Option:" line="66">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_UserManagement_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 18:21:05.812" level="INFO">Set test documentation to:
+Executing_UserManagement_Testcase</msg>
+<status status="PASS" starttime="20221201 18:21:05.811" endtime="20221201 18:21:05.812"/>
+</kw>
+<kw name="Login With Org Credentials:" library="usertestcase">
+<kw name="Open Browser" library="RPA.Browser">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 18:21:05.820" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 18:21:05.819" endtime="20221201 18:21:09.007"/>
+</kw>
+<kw name="Maximize Browser Window" library="RPA.Browser">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 18:21:09.007" endtime="20221201 18:21:09.174"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>id:uname</arg>
+<arg>${app}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:09.175" level="INFO">Typing text 'arorg' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 18:21:09.174" endtime="20221201 18:21:09.428"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:09.429" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 18:21:09.527" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 18:21:09.696" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 18:21:09.429" endtime="20221201 18:21:09.696"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:09.698" level="INFO">Clicking button 'xpath://*[@id="user_validation_form"]/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 18:21:09.697" endtime="20221201 18:21:10.960"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:21:13.968" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221201 18:21:10.960" endtime="20221201 18:21:13.968"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:13.969" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]'.</msg>
+<status status="PASS" starttime="20221201 18:21:13.969" endtime="20221201 18:21:14.105"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:14.105" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20221201 18:21:14.105" endtime="20221201 18:21:14.213"/>
+</kw>
+<status status="PASS" starttime="20221201 18:21:05.816" endtime="20221201 18:21:14.213"/>
+</kw>
+<kw name="User_management_Edit_Option:" library="usertestcase">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:21:16.218" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:21:14.215" endtime="20221201 18:21:16.218"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[1]/aside/section/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:16.219" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[1]/aside/section/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221201 18:21:16.218" endtime="20221201 18:21:17.233"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:21:19.244" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:21:17.234" endtime="20221201 18:21:19.244"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/div/div/div/div/div[2]/div/table/tbody/tr[2]/td[7]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:19.245" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/div/div/div/div/div[2]/div/table/tbody/tr[2]/td[7]/button[2]'.</msg>
+<status status="PASS" starttime="20221201 18:21:19.244" endtime="20221201 18:21:20.324"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:21:22.340" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:21:20.324" endtime="20221201 18:21:22.340"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[3]/input</arg>
+<arg>arun@techtez.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:22.341" level="INFO">Typing text 'arun@techtez.com' into text field 'xpath:/html/body/div/div[5]/section/div[1]/div[2]/div[3]/input'.</msg>
+<status status="PASS" starttime="20221201 18:21:22.340" endtime="20221201 18:21:22.570"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:21:24.572" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:21:22.570" endtime="20221201 18:21:24.572"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/section/div[2]/div/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:24.573" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/section/div[2]/div/input[1]'.</msg>
+<status status="PASS" starttime="20221201 18:21:24.573" endtime="20221201 18:21:24.679"/>
+</kw>
+<status status="PASS" starttime="20221201 18:21:14.214" endtime="20221201 18:21:24.680"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>User_management_Edit_Option_sucessful</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221201 18:21:24.683" level="INFO">User_management_Edit_Option_sucessful</msg>
+<status status="PASS" starttime="20221201 18:21:24.682" endtime="20221201 18:21:24.683"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>User_management_Edit_Option</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20221201 18:21:24.684" level="INFO">Set test message to:
+User_management_Edit_Option</msg>
+<status status="PASS" starttime="20221201 18:21:24.684" endtime="20221201 18:21:24.684"/>
+</kw>
+<doc>Executing_UserManagement_Testcase</doc>
+<tag>Login_User_management_Edit_Option_case</tag>
+<status status="PASS" starttime="20221201 18:21:05.810" endtime="20221201 18:21:24.685">User_management_Edit_Option</status>
+</test>
+<test id="s1-t9" name="TC009:verify_User_management_Delete_Option:" line="76">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_UserManagement_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 18:21:24.692" level="INFO">Set test documentation to:
+Executing_UserManagement_Testcase</msg>
+<status status="PASS" starttime="20221201 18:21:24.691" endtime="20221201 18:21:24.692"/>
+</kw>
+<kw name="Login With Org Credentials:" library="usertestcase">
+<kw name="Open Browser" library="RPA.Browser">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 18:21:24.694" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 18:21:24.693" endtime="20221201 18:21:31.286"/>
+</kw>
+<kw name="Maximize Browser Window" library="RPA.Browser">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 18:21:31.286" endtime="20221201 18:21:31.434"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>id:uname</arg>
+<arg>${app}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:31.435" level="INFO">Typing text 'arorg' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 18:21:31.435" endtime="20221201 18:21:31.639"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:31.640" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 18:21:31.709" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 18:21:31.812" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 18:21:31.639" endtime="20221201 18:21:31.812"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:31.813" level="INFO">Clicking button 'xpath://*[@id="user_validation_form"]/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 18:21:31.813" endtime="20221201 18:21:32.712"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:21:35.727" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221201 18:21:32.713" endtime="20221201 18:21:35.727"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:35.728" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]'.</msg>
+<status status="PASS" starttime="20221201 18:21:35.727" endtime="20221201 18:21:35.838"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:35.839" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20221201 18:21:35.839" endtime="20221201 18:21:35.927"/>
+</kw>
+<status status="PASS" starttime="20221201 18:21:24.693" endtime="20221201 18:21:35.928"/>
+</kw>
+<kw name="User_management_Delete_Option:" library="usertestcase">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:21:37.944" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:21:35.929" endtime="20221201 18:21:37.944"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[1]/aside/section/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:37.946" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[1]/aside/section/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221201 18:21:37.944" endtime="20221201 18:21:38.940"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:21:40.953" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:21:38.940" endtime="20221201 18:21:40.953"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div/div[5]/div/div/div/div/div[2]/div/table/tbody/tr[2]/td[7]/button[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:40.954" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/div/div/div/div/div[2]/div/table/tbody/tr[2]/td[7]/button[3]'.</msg>
+<status status="PASS" starttime="20221201 18:21:40.953" endtime="20221201 18:21:41.029"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:21:43.038" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:21:41.030" endtime="20221201 18:21:43.038"/>
+</kw>
+<kw name="Handle Alert" library="RPA.Browser">
+<arg>ACCEPT:OK</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20221201 18:21:43.039" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<kw name="Capture Page Screenshot" library="RPA.Browser">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221201 18:21:43.051" level="FAIL">UnexpectedAlertPresentException: Alert Text: Are you sure you want to delete the User?
+Message: unexpected alert open: {Alert text : Are you sure you want to delete the User?}
+  (Session info: chrome=107.0.5304.122)
+</msg>
+<status status="FAIL" starttime="20221201 18:21:43.045" endtime="20221201 18:21:43.064"/>
+</kw>
+<msg timestamp="20221201 18:21:43.064" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: UnexpectedAlertPresentException: Alert Text: Are you sure you want to delete the User?
+Message: unexpected alert open: {Alert text : Are you sure you want to delete the User?}
+  (Session info: chrome=107.0.5304.122)
+</msg>
+<msg timestamp="20221201 18:21:43.079" level="FAIL">ValueError: Invalid alert action 'ACCEPT:OK'.</msg>
+<status status="FAIL" starttime="20221201 18:21:43.038" endtime="20221201 18:21:43.080"/>
+</kw>
+<status status="FAIL" starttime="20221201 18:21:35.929" endtime="20221201 18:21:43.081"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>User_management_Delete_Option_sucessful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20221201 18:21:43.082" endtime="20221201 18:21:43.082"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>User_management_Delete_Option</arg>
+<doc>Sets message for the current test case.</doc>
+<status status="NOT RUN" starttime="20221201 18:21:43.083" endtime="20221201 18:21:43.083"/>
+</kw>
+<doc>Executing_UserManagement_Testcase</doc>
+<tag>Login_User_management_Delete_Option_case</tag>
+<status status="FAIL" starttime="20221201 18:21:24.690" endtime="20221201 18:21:43.084">ValueError: Invalid alert action 'ACCEPT:OK'.</status>
+</test>
+<test id="s1-t10" name="TC010:verify_User_management_sign_out:" line="84">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_UserManagement_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 18:21:43.097" level="INFO">Set test documentation to:
+Executing_UserManagement_Testcase</msg>
+<status status="PASS" starttime="20221201 18:21:43.096" endtime="20221201 18:21:43.097"/>
+</kw>
+<kw name="Login With Org Credentials:" library="usertestcase">
+<kw name="Open Browser" library="RPA.Browser">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 18:21:43.100" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 18:21:43.099" endtime="20221201 18:21:55.061"/>
+</kw>
+<kw name="Maximize Browser Window" library="RPA.Browser">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 18:21:55.062" endtime="20221201 18:21:55.218"/>
+</kw>
+<kw name="Input Text" library="RPA.Browser">
+<arg>id:uname</arg>
+<arg>${app}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:55.219" level="INFO">Typing text 'arorg' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 18:21:55.219" endtime="20221201 18:21:55.473"/>
+</kw>
+<kw name="Input Password" library="RPA.Browser">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:55.474" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 18:21:55.556" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 18:21:55.677" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 18:21:55.474" endtime="20221201 18:21:55.677"/>
+</kw>
+<kw name="Click Button" library="RPA.Browser">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 18:21:55.679" level="INFO">Clicking button 'xpath://*[@id="user_validation_form"]/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 18:21:55.678" endtime="20221201 18:21:57.280"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:22:00.286" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221201 18:21:57.280" endtime="20221201 18:22:00.286"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:22:00.287" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]'.</msg>
+<status status="PASS" starttime="20221201 18:22:00.286" endtime="20221201 18:22:00.400"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:22:00.401" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20221201 18:22:00.400" endtime="20221201 18:22:00.494"/>
+</kw>
+<status status="PASS" starttime="20221201 18:21:43.098" endtime="20221201 18:22:00.494"/>
+</kw>
+<kw name="User_management_sign_out:" library="usertestcase">
+<kw name="Sleep" library="BuiltIn">
+<arg>${Time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:22:02.499" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:22:00.497" endtime="20221201 18:22:02.499"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>${signout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:22:02.500" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[1]/aside/section/ul/li[12]/a'.</msg>
+<status status="PASS" starttime="20221201 18:22:02.499" endtime="20221201 18:22:02.600"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${Time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:22:04.605" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:22:02.601" endtime="20221201 18:22:04.605"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>${cancelsignout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:22:04.606" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[4]/div/div/div[2]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20221201 18:22:04.605" endtime="20221201 18:22:04.689"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${Time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:22:06.702" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:22:04.689" endtime="20221201 18:22:06.702"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>${signout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:22:06.703" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[1]/aside/section/ul/li[12]/a'.</msg>
+<status status="PASS" starttime="20221201 18:22:06.703" endtime="20221201 18:22:06.755"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>${Time}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 18:22:08.768" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 18:22:06.756" endtime="20221201 18:22:08.768"/>
+</kw>
+<kw name="Click Element" library="RPA.Browser">
+<arg>${Exitsignout}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 18:22:08.770" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[4]/div/div/div[2]/div/div[2]/a/button'.</msg>
+<status status="PASS" starttime="20221201 18:22:08.769" endtime="20221201 18:22:09.446"/>
+</kw>
+<status status="PASS" starttime="20221201 18:22:00.495" endtime="20221201 18:22:09.446"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>User_management_Sign_out_Option_sucessful</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221201 18:22:09.449" level="INFO">User_management_Sign_out_Option_sucessful</msg>
+<status status="PASS" starttime="20221201 18:22:09.448" endtime="20221201 18:22:09.449"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>User_management_Sign_out_Option</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20221201 18:22:09.451" level="INFO">Set test message to:
+User_management_Sign_out_Option</msg>
+<status status="PASS" starttime="20221201 18:22:09.450" endtime="20221201 18:22:09.451"/>
+</kw>
+<doc>Executing_UserManagement_Testcase</doc>
+<tag>Login_User_management_Sign_out_Option_case</tag>
+<status status="PASS" starttime="20221201 18:21:43.094" endtime="20221201 18:22:09.452">User_management_Sign_out_Option</status>
+</test>
+<status status="FAIL" starttime="20221201 18:18:54.040" endtime="20221201 18:22:09.457"/>
+</suite>
+<statistics>
+<total>
+<stat pass="9" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="3" fail="0" skip="0">Login_Sitemanagement_case</stat>
+<stat pass="1" fail="0" skip="0">Login_User_management_add_user_displayname_invaild_case</stat>
+<stat pass="1" fail="0" skip="0">Login_User_management_add_user_Email_invaild_case</stat>
+<stat pass="1" fail="0" skip="0">Login_User_management_add_user_Phone_number_invaild_case</stat>
+<stat pass="0" fail="1" skip="0">Login_User_management_Delete_Option_case</stat>
+<stat pass="1" fail="0" skip="0">Login_User_management_Edit_Option_case</stat>
+<stat pass="1" fail="0" skip="0">Login_User_management_Sign_out_Option_case</stat>
+<stat pass="1" fail="0" skip="0">Login_User_management_View_Option_case</stat>
+</tag>
+<suite>
+<stat pass="9" fail="1" skip="0" id="s1" name="Usermanagement">Usermanagement</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221201 18:18:56.272" level="WARN">This is a deprecated import that will be removed in favor of RPA.Browser.Selenium</msg>
+<msg timestamp="20221201 18:21:43.064" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: UnexpectedAlertPresentException: Alert Text: Are you sure you want to delete the User?
+Message: unexpected alert open: {Alert text : Are you sure you want to delete the User?}
+  (Session info: chrome=107.0.5304.122)
+</msg>
+</errors>
+</robot>

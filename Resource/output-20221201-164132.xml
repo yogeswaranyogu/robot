@@ -1,0 +1,1609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20221201 16:41:32.030" rpa="false" schemaversion="3">
+<suite id="s1" name="site details Test manage" source="E:\Microsoftvs\Resource\site_details_Test_manage.robot">
+<test id="s1-t1" name="TC001:verify Login With_site_Details_Credentials:" line="6">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_Login_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 16:41:33.107" level="INFO">Set test documentation to:
+Executing_Login_Testcase</msg>
+<status status="PASS" starttime="20221201 16:41:33.106" endtime="20221201 16:41:33.107"/>
+</kw>
+<kw name="Login With_Credentials_Site_Details:" library="site_details">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 16:41:33.113" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 16:41:33.111" endtime="20221201 16:41:36.257"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 16:41:36.257" endtime="20221201 16:41:36.454"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:uname</arg>
+<arg>${app}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:41:36.456" level="INFO">Typing text 'arsite' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 16:41:36.455" endtime="20221201 16:41:36.677"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:41:36.678" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 16:41:36.750" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 16:41:36.848" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 16:41:36.677" endtime="20221201 16:41:36.848"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 16:41:36.849" level="INFO">Clicking button 'xpath:/html/body/div/div[2]/div/form/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 16:41:36.848" endtime="20221201 16:41:37.550"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:41:39.561" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:41:37.550" endtime="20221201 16:41:39.561"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Login_site}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:41:39.563" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]'.</msg>
+<status status="PASS" starttime="20221201 16:41:39.562" endtime="20221201 16:41:39.726"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:41:39.727" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20221201 16:41:39.726" endtime="20221201 16:41:39.814"/>
+</kw>
+<status status="PASS" starttime="20221201 16:41:33.108" endtime="20221201 16:41:39.814"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Login_sucessful</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221201 16:41:39.815" level="INFO">Login_sucessful</msg>
+<status status="PASS" starttime="20221201 16:41:39.815" endtime="20221201 16:41:39.815"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>ExecuteLoginpage</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20221201 16:41:39.816" level="INFO">Set test message to:
+ExecuteLoginpage</msg>
+<status status="PASS" starttime="20221201 16:41:39.815" endtime="20221201 16:41:39.816"/>
+</kw>
+<doc>Executing_Login_Testcase</doc>
+<tag>Login_site_Details_case</tag>
+<status status="PASS" starttime="20221201 16:41:33.102" endtime="20221201 16:41:39.816">ExecuteLoginpage</status>
+</test>
+<test id="s1-t2" name="TC002:verify Site_details_for_Site_Management_View_option:" line="12">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_View_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 16:41:39.819" level="INFO">Set test documentation to:
+Executing_View_Testcase</msg>
+<status status="PASS" starttime="20221201 16:41:39.819" endtime="20221201 16:41:39.819"/>
+</kw>
+<kw name="Login With_Credentials_Site_Details:" library="site_details">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 16:41:39.820" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 16:41:39.820" endtime="20221201 16:41:43.877"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 16:41:43.877" endtime="20221201 16:41:44.078"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:uname</arg>
+<arg>${app}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:41:44.079" level="INFO">Typing text 'arsite' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 16:41:44.078" endtime="20221201 16:41:44.273"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:41:44.274" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 16:41:44.343" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 16:41:44.445" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 16:41:44.273" endtime="20221201 16:41:44.445"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 16:41:44.446" level="INFO">Clicking button 'xpath:/html/body/div/div[2]/div/form/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 16:41:44.446" endtime="20221201 16:41:46.104"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:41:48.111" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:41:46.105" endtime="20221201 16:41:48.111"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Login_site}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:41:48.112" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]'.</msg>
+<status status="PASS" starttime="20221201 16:41:48.111" endtime="20221201 16:41:48.195"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:41:48.196" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20221201 16:41:48.195" endtime="20221201 16:41:48.270"/>
+</kw>
+<status status="PASS" starttime="20221201 16:41:39.819" endtime="20221201 16:41:48.270"/>
+</kw>
+<kw name="Site_details_for_Site_Management_View_option:" library="site_details">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:41:50.280" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:41:48.274" endtime="20221201 16:41:50.280"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pagecontain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221201 16:41:50.493" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221201 16:41:50.360" endtime="20221201 16:41:50.493"/>
+</kw>
+<msg timestamp="20221201 16:41:50.494" level="FAIL">Page should have contained text 'Site - site1' but did not.</msg>
+<status status="FAIL" starttime="20221201 16:41:50.280" endtime="20221201 16:41:50.509"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${siteadmin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221201 16:41:50.510" endtime="20221201 16:41:50.511"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221201 16:41:50.511" endtime="20221201 16:41:50.511"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${siteadmin_view}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221201 16:41:50.512" endtime="20221201 16:41:50.512"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221201 16:41:50.512" endtime="20221201 16:41:50.512"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Goback}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221201 16:41:50.512" endtime="20221201 16:41:50.512"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20221201 16:41:50.513" endtime="20221201 16:41:50.513"/>
+</kw>
+<status status="FAIL" starttime="20221201 16:41:48.273" endtime="20221201 16:41:50.514"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Site_details_for_Site_Management_View_option</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20221201 16:41:50.515" endtime="20221201 16:41:50.515"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>ExecuteViewpage</arg>
+<doc>Sets message for the current test case.</doc>
+<status status="NOT RUN" starttime="20221201 16:41:50.515" endtime="20221201 16:41:50.516"/>
+</kw>
+<doc>Executing_View_Testcase</doc>
+<tag>Site_details_for_Site_Management_View_option</tag>
+<status status="FAIL" starttime="20221201 16:41:39.818" endtime="20221201 16:41:50.517">Page should have contained text 'Site - site1' but did not.</status>
+</test>
+<test id="s1-t3" name="TC003:verify Site_details_for_Site_Management_Edit_option:" line="19">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_Edit_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 16:41:50.520" level="INFO">Set test documentation to:
+Executing_Edit_Testcase</msg>
+<status status="PASS" starttime="20221201 16:41:50.520" endtime="20221201 16:41:50.520"/>
+</kw>
+<kw name="Login With_Credentials_Site_Details:" library="site_details">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 16:41:50.522" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 16:41:50.521" endtime="20221201 16:41:54.665"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 16:41:54.665" endtime="20221201 16:41:54.846"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:uname</arg>
+<arg>${app}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:41:54.847" level="INFO">Typing text 'arsite' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 16:41:54.846" endtime="20221201 16:41:55.071"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:41:55.073" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 16:41:55.145" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 16:41:55.241" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 16:41:55.071" endtime="20221201 16:41:55.241"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 16:41:55.242" level="INFO">Clicking button 'xpath:/html/body/div/div[2]/div/form/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 16:41:55.241" endtime="20221201 16:41:55.999"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:41:58.004" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:41:55.999" endtime="20221201 16:41:58.004"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Login_site}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:41:58.006" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]'.</msg>
+<status status="PASS" starttime="20221201 16:41:58.005" endtime="20221201 16:41:58.147"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:41:58.148" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20221201 16:41:58.147" endtime="20221201 16:41:58.222"/>
+</kw>
+<status status="PASS" starttime="20221201 16:41:50.521" endtime="20221201 16:41:58.222"/>
+</kw>
+<kw name="Site_details_for_Site_Management_Edit_option:" library="site_details">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:42:00.235" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:41:58.224" endtime="20221201 16:42:00.235"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pagecontain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221201 16:42:00.553" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221201 16:42:00.364" endtime="20221201 16:42:00.553"/>
+</kw>
+<msg timestamp="20221201 16:42:00.554" level="FAIL">Page should have contained text 'Site - site1' but did not.</msg>
+<status status="FAIL" starttime="20221201 16:42:00.236" endtime="20221201 16:42:00.555"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${siteadmin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:00.556" endtime="20221201 16:42:00.556"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:00.556" endtime="20221201 16:42:00.556"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${siteadmin_Edit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:00.556" endtime="20221201 16:42:00.557"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:00.557" endtime="20221201 16:42:00.557"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${siteadmin_Editvalue}</arg>
+<arg>${siteadmin_Editname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:00.557" endtime="20221201 16:42:00.557"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:00.557" endtime="20221201 16:42:00.557"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${siteadmin_Edit_save}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:00.558" endtime="20221201 16:42:00.558"/>
+</kw>
+<status status="FAIL" starttime="20221201 16:41:58.223" endtime="20221201 16:42:00.559"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Site_details_for_Site_Management_Edit_option</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:00.559" endtime="20221201 16:42:00.560"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>ExecuteEditpage</arg>
+<doc>Sets message for the current test case.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:00.560" endtime="20221201 16:42:00.560"/>
+</kw>
+<doc>Executing_Edit_Testcase</doc>
+<tag>Site_details_for_Site_Management_Edit_option</tag>
+<status status="FAIL" starttime="20221201 16:41:50.518" endtime="20221201 16:42:00.561">Page should have contained text 'Site - site1' but did not.</status>
+</test>
+<test id="s1-t4" name="TC004:verify Site_details_for_Site_Management_Delete_option:" line="26">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_Delete_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 16:42:00.565" level="INFO">Set test documentation to:
+Executing_Delete_Testcase</msg>
+<status status="PASS" starttime="20221201 16:42:00.565" endtime="20221201 16:42:00.566"/>
+</kw>
+<kw name="Login With_Credentials_Site_Details:" library="site_details">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 16:42:00.567" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 16:42:00.567" endtime="20221201 16:42:09.436"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 16:42:09.436" endtime="20221201 16:42:09.590"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:uname</arg>
+<arg>${app}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:42:09.591" level="INFO">Typing text 'arsite' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 16:42:09.590" endtime="20221201 16:42:09.787"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:42:09.787" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 16:42:09.854" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 16:42:09.953" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 16:42:09.787" endtime="20221201 16:42:09.953"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 16:42:09.954" level="INFO">Clicking button 'xpath:/html/body/div/div[2]/div/form/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 16:42:09.953" endtime="20221201 16:42:10.969"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:42:12.974" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:42:10.970" endtime="20221201 16:42:12.974"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Login_site}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:42:12.975" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div/input[1]'.</msg>
+<status status="PASS" starttime="20221201 16:42:12.974" endtime="20221201 16:42:13.079"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Continue}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:42:13.079" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[2]/div/div[2]/div/div/div[3]/button[1]'.</msg>
+<status status="PASS" starttime="20221201 16:42:13.079" endtime="20221201 16:42:13.148"/>
+</kw>
+<status status="PASS" starttime="20221201 16:42:00.566" endtime="20221201 16:42:13.148"/>
+</kw>
+<kw name="Site_details_for_Site_Management_Delete_option:" library="site_details">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:42:15.158" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:42:13.149" endtime="20221201 16:42:15.158"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pagecontain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221201 16:42:15.785" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221201 16:42:15.423" endtime="20221201 16:42:15.785"/>
+</kw>
+<msg timestamp="20221201 16:42:15.786" level="FAIL">Page should have contained text 'Site - site1' but did not.</msg>
+<status status="FAIL" starttime="20221201 16:42:15.158" endtime="20221201 16:42:15.786"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${siteadmin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:15.786" endtime="20221201 16:42:15.787"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:15.787" endtime="20221201 16:42:15.787"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[5]/section/div[3]/div/div/div/div[2]/div/table/tbody/tr/td[8]/button[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:15.787" endtime="20221201 16:42:15.787"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>Accept:Ok</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:15.787" endtime="20221201 16:42:15.787"/>
+</kw>
+<status status="FAIL" starttime="20221201 16:42:13.149" endtime="20221201 16:42:15.788"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Site_details_for_Site_Management_Delete_option</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:15.789" endtime="20221201 16:42:15.789"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>ExecuteDeletepage</arg>
+<doc>Sets message for the current test case.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:15.790" endtime="20221201 16:42:15.790"/>
+</kw>
+<doc>Executing_Delete_Testcase</doc>
+<tag>Site_details_for_Site_Management_Delete_option</tag>
+<status status="FAIL" starttime="20221201 16:42:00.564" endtime="20221201 16:42:15.791">Page should have contained text 'Site - site1' but did not.</status>
+</test>
+<test id="s1-t5" name="TC005:verify Site_details_for_Site_Management_Sign_Out_option:" line="33">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_Login_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 16:42:15.798" level="INFO">Set test documentation to:
+Executing_Login_Testcase</msg>
+<status status="PASS" starttime="20221201 16:42:15.797" endtime="20221201 16:42:15.798"/>
+</kw>
+<kw name="Site_details_for_Site_Management_Delete_option:" library="site_details">
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:42:17.813" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:42:15.799" endtime="20221201 16:42:17.813"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>${pagecontain}</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221201 16:42:17.975" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221201 16:42:17.858" endtime="20221201 16:42:17.975"/>
+</kw>
+<msg timestamp="20221201 16:42:17.976" level="FAIL">Page should have contained text 'Site - site1' but did not.</msg>
+<status status="FAIL" starttime="20221201 16:42:17.813" endtime="20221201 16:42:17.977"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${siteadmin}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:17.977" endtime="20221201 16:42:17.977"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:17.978" endtime="20221201 16:42:17.978"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[5]/section/div[3]/div/div/div/div[2]/div/table/tbody/tr/td[8]/button[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:17.978" endtime="20221201 16:42:17.978"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>Accept:Ok</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:17.978" endtime="20221201 16:42:17.978"/>
+</kw>
+<status status="FAIL" starttime="20221201 16:42:15.798" endtime="20221201 16:42:17.979"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Login_sucessful</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:17.980" endtime="20221201 16:42:17.980"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>ExecuteLoginpage</arg>
+<doc>Sets message for the current test case.</doc>
+<status status="NOT RUN" starttime="20221201 16:42:17.981" endtime="20221201 16:42:17.981"/>
+</kw>
+<doc>Executing_Login_Testcase</doc>
+<tag>Login_Fota_case</tag>
+<status status="FAIL" starttime="20221201 16:42:15.794" endtime="20221201 16:42:17.982">Page should have contained text 'Site - site1' but did not.</status>
+</test>
+<test id="s1-t6" name="TC006:verify_Login_With_App_Details_Credentials:" line="41">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_Login_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 16:42:17.986" level="INFO">Set test documentation to:
+Executing_Login_Testcase</msg>
+<status status="PASS" starttime="20221201 16:42:17.986" endtime="20221201 16:42:17.987"/>
+</kw>
+<kw name="Application_Details_Login_With_Application_Credentails:" library="site_details">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 16:42:17.988" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 16:42:17.988" endtime="20221201 16:42:22.406"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 16:42:22.406" endtime="20221201 16:42:22.549"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:uname</arg>
+<arg>${appuser}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:42:22.550" level="INFO">Typing text 'arapp' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 16:42:22.549" endtime="20221201 16:42:22.716"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:42:22.717" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 16:42:22.772" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 16:42:22.867" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 16:42:22.717" endtime="20221201 16:42:22.867"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 16:42:22.868" level="INFO">Clicking button 'xpath:/html/body/div/div[2]/div/form/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 16:42:22.867" endtime="20221201 16:42:26.940"/>
+</kw>
+<status status="PASS" starttime="20221201 16:42:17.987" endtime="20221201 16:42:26.940"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Login_sucessful</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221201 16:42:26.942" level="INFO">Login_sucessful</msg>
+<status status="PASS" starttime="20221201 16:42:26.941" endtime="20221201 16:42:26.942"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>ExecuteLoginpage</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20221201 16:42:26.946" level="INFO">Set test message to:
+ExecuteLoginpage</msg>
+<status status="PASS" starttime="20221201 16:42:26.945" endtime="20221201 16:42:26.946"/>
+</kw>
+<doc>Executing_Login_Testcase</doc>
+<tag>Login_app_Details_case</tag>
+<status status="PASS" starttime="20221201 16:42:17.985" endtime="20221201 16:42:26.948">ExecuteLoginpage</status>
+</test>
+<test id="s1-t7" name="TC007:verify_App_Details:" line="48">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Application_Details:</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 16:42:26.956" level="INFO">Set test documentation to:
+Application_Details:</msg>
+<status status="PASS" starttime="20221201 16:42:26.955" endtime="20221201 16:42:26.956"/>
+</kw>
+<kw name="Application_Details_Login_With_Application_Credentails:" library="site_details">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 16:42:26.959" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 16:42:26.958" endtime="20221201 16:42:31.364"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 16:42:31.364" endtime="20221201 16:42:31.513"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:uname</arg>
+<arg>${appuser}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:42:31.513" level="INFO">Typing text 'arapp' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 16:42:31.513" endtime="20221201 16:42:31.685"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:42:31.686" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 16:42:31.744" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 16:42:31.847" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 16:42:31.685" endtime="20221201 16:42:31.847"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 16:42:31.848" level="INFO">Clicking button 'xpath:/html/body/div/div[2]/div/form/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 16:42:31.847" endtime="20221201 16:42:45.983"/>
+</kw>
+<status status="PASS" starttime="20221201 16:42:26.957" endtime="20221201 16:42:45.984"/>
+</kw>
+<kw name="Application_Details:" library="site_details">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>arapp</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221201 16:42:46.019" level="INFO">Current page contains text 'arapp'.</msg>
+<status status="PASS" starttime="20221201 16:42:45.986" endtime="20221201 16:42:46.020"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[1]/aside/section/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:42:46.021" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/aside/section/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221201 16:42:46.020" endtime="20221201 16:42:48.852"/>
+</kw>
+<status status="PASS" starttime="20221201 16:42:45.985" endtime="20221201 16:42:48.853"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Login_sucessful_with_Application_Details:</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221201 16:42:48.856" level="INFO">Login_sucessful_with_Application_Details:</msg>
+<status status="PASS" starttime="20221201 16:42:48.855" endtime="20221201 16:42:48.856"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>Application_Details:</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20221201 16:42:48.857" level="INFO">Set test message to:
+Application_Details:</msg>
+<status status="PASS" starttime="20221201 16:42:48.857" endtime="20221201 16:42:48.857"/>
+</kw>
+<doc>Application_Details:</doc>
+<tag>App_Details_case</tag>
+<status status="PASS" starttime="20221201 16:42:26.954" endtime="20221201 16:42:48.858">Application_Details:</status>
+</test>
+<test id="s1-t8" name="TC008:verify Site_details_for_Site_Management_View_option:" line="56">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_View_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 16:42:48.868" level="INFO">Set test documentation to:
+Executing_View_Testcase</msg>
+<status status="PASS" starttime="20221201 16:42:48.868" endtime="20221201 16:42:48.869"/>
+</kw>
+<kw name="Application_Details_Login_With_Application_Credentails:" library="site_details">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 16:42:48.873" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 16:42:48.870" endtime="20221201 16:43:06.007"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 16:43:06.008" endtime="20221201 16:43:06.167"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:uname</arg>
+<arg>${appuser}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:43:06.169" level="INFO">Typing text 'arapp' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 16:43:06.168" endtime="20221201 16:43:06.407"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:43:06.409" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 16:43:06.491" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 16:43:06.638" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 16:43:06.408" endtime="20221201 16:43:06.638"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 16:43:06.640" level="INFO">Clicking button 'xpath:/html/body/div/div[2]/div/form/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 16:43:06.639" endtime="20221201 16:43:11.441"/>
+</kw>
+<status status="PASS" starttime="20221201 16:42:48.869" endtime="20221201 16:43:11.441"/>
+</kw>
+<kw name="Application_Details:" library="site_details">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>arapp</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221201 16:43:11.507" level="INFO">Current page contains text 'arapp'.</msg>
+<status status="PASS" starttime="20221201 16:43:11.447" endtime="20221201 16:43:11.507"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[1]/aside/section/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:43:11.509" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/aside/section/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221201 16:43:11.508" endtime="20221201 16:43:13.335"/>
+</kw>
+<status status="PASS" starttime="20221201 16:43:11.443" endtime="20221201 16:43:13.336"/>
+</kw>
+<kw name="Application_details_for_Application_Management_View_option:" library="site_details">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>arapp</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221201 16:43:13.364" level="INFO">Current page contains text 'arapp'.</msg>
+<status status="PASS" starttime="20221201 16:43:13.338" endtime="20221201 16:43:13.365"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[1]/aside/section/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:43:13.365" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/aside/section/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221201 16:43:13.365" endtime="20221201 16:43:14.189"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:43:16.201" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:43:14.189" endtime="20221201 16:43:16.202"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[5]/section/div[3]/div/div/div/div[2]/div/table/tbody/tr/td[9]/button[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:43:16.202" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/section/div[3]/div/div/div/div[2]/div/table/tbody/tr/td[9]/button[1]'.</msg>
+<status status="PASS" starttime="20221201 16:43:16.202" endtime="20221201 16:43:17.450"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:43:19.453" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:43:17.450" endtime="20221201 16:43:19.453"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[5]/section/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:43:19.454" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/section/button'.</msg>
+<status status="PASS" starttime="20221201 16:43:19.454" endtime="20221201 16:43:20.315"/>
+</kw>
+<status status="PASS" starttime="20221201 16:43:13.337" endtime="20221201 16:43:20.316"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Site_details_for_Site_Management_View_option</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221201 16:43:20.318" level="INFO">Site_details_for_Site_Management_View_option</msg>
+<status status="PASS" starttime="20221201 16:43:20.317" endtime="20221201 16:43:20.318"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>ExecuteViewpage</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20221201 16:43:20.320" level="INFO">Set test message to:
+ExecuteViewpage</msg>
+<status status="PASS" starttime="20221201 16:43:20.319" endtime="20221201 16:43:20.321"/>
+</kw>
+<doc>Executing_View_Testcase</doc>
+<tag>Site_details_for_Site_Management_View_option</tag>
+<status status="PASS" starttime="20221201 16:42:48.866" endtime="20221201 16:43:20.322">ExecuteViewpage</status>
+</test>
+<test id="s1-t9" name="TC009:verify Site_details_for_Site_Management_Edit_option:" line="64">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_Edit_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 16:43:20.327" level="INFO">Set test documentation to:
+Executing_Edit_Testcase</msg>
+<status status="PASS" starttime="20221201 16:43:20.326" endtime="20221201 16:43:20.327"/>
+</kw>
+<kw name="Application_Details_Login_With_Application_Credentails:" library="site_details">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 16:43:20.328" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 16:43:20.328" endtime="20221201 16:43:42.310"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 16:43:42.311" endtime="20221201 16:43:42.467"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:uname</arg>
+<arg>${appuser}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:43:42.468" level="INFO">Typing text 'arapp' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 16:43:42.467" endtime="20221201 16:43:42.687"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:43:42.688" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 16:43:42.768" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 16:43:42.894" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 16:43:42.687" endtime="20221201 16:43:42.894"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 16:43:42.895" level="INFO">Clicking button 'xpath:/html/body/div/div[2]/div/form/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 16:43:42.894" endtime="20221201 16:43:50.239"/>
+</kw>
+<status status="PASS" starttime="20221201 16:43:20.327" endtime="20221201 16:43:50.239"/>
+</kw>
+<kw name="Application_Details:" library="site_details">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>arapp</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221201 16:43:50.270" level="INFO">Current page contains text 'arapp'.</msg>
+<status status="PASS" starttime="20221201 16:43:50.243" endtime="20221201 16:43:50.270"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[1]/aside/section/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:43:50.270" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/aside/section/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221201 16:43:50.270" endtime="20221201 16:43:53.382"/>
+</kw>
+<status status="PASS" starttime="20221201 16:43:50.242" endtime="20221201 16:43:53.383"/>
+</kw>
+<kw name="Application_details_for_Application_Management_Edit_option:" library="site_details">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>arapp</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221201 16:43:53.417" level="INFO">Current page contains text 'arapp'.</msg>
+<status status="PASS" starttime="20221201 16:43:53.386" endtime="20221201 16:43:53.417"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[1]/aside/section/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:43:53.418" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/aside/section/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221201 16:43:53.417" endtime="20221201 16:43:54.932"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:43:56.937" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:43:54.932" endtime="20221201 16:43:56.938"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[5]/section/div[3]/div/div/div/div[2]/div/table/tbody/tr/td[9]/button[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:43:56.940" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/section/div[3]/div/div/div/div[2]/div/table/tbody/tr/td[9]/button[2]'.</msg>
+<status status="PASS" starttime="20221201 16:43:56.939" endtime="20221201 16:43:58.505"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[5]/form/section[1]/div/div[2]/div/div/div[3]/input</arg>
+<arg>arapp</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:43:58.507" level="INFO">Typing text 'arapp' into text field 'xpath:/html/body/div/div[5]/form/section[1]/div/div[2]/div/div/div[3]/input'.</msg>
+<status status="PASS" starttime="20221201 16:43:58.506" endtime="20221201 16:43:58.708"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:44:00.721" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:43:58.708" endtime="20221201 16:44:00.721"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[5]/form/section[2]/div[2]/div/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:44:00.723" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/form/section[2]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 16:44:00.722" endtime="20221201 16:44:00.867"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>Accept:OK</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20221201 16:44:00.869" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221201 16:44:01.404" level="FAIL">UnexpectedAlertPresentException: Alert Text: Information has been updated successfully!
+Message: unexpected alert open: {Alert text : Information has been updated successfully!}
+  (Session info: chrome=107.0.5304.122)
+</msg>
+<status status="FAIL" starttime="20221201 16:44:01.383" endtime="20221201 16:44:01.457"/>
+</kw>
+<msg timestamp="20221201 16:44:01.458" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: UnexpectedAlertPresentException: Alert Text: Information has been updated successfully!
+Message: unexpected alert open: {Alert text : Information has been updated successfully!}
+  (Session info: chrome=107.0.5304.122)
+</msg>
+<msg timestamp="20221201 16:44:01.464" level="FAIL">ValueError: Invalid alert action 'ACCEPT:OK'.</msg>
+<status status="FAIL" starttime="20221201 16:44:00.868" endtime="20221201 16:44:01.466"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20221201 16:44:01.467" endtime="20221201 16:44:01.467"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[5]/section/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20221201 16:44:01.468" endtime="20221201 16:44:01.469"/>
+</kw>
+<status status="FAIL" starttime="20221201 16:43:53.384" endtime="20221201 16:44:01.470"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Application_details_for_Application_Management_Edit_option</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20221201 16:44:01.471" endtime="20221201 16:44:01.472"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>ExecuteEditpage</arg>
+<doc>Sets message for the current test case.</doc>
+<status status="NOT RUN" starttime="20221201 16:44:01.472" endtime="20221201 16:44:01.472"/>
+</kw>
+<doc>Executing_Edit_Testcase</doc>
+<tag>Site_details_for_Site_Management_Edit_option</tag>
+<status status="FAIL" starttime="20221201 16:43:20.325" endtime="20221201 16:44:01.473">ValueError: Invalid alert action 'ACCEPT:OK'.</status>
+</test>
+<test id="s1-t10" name="TC010:verify Site_details_for_Site_Management_Delete_option:" line="72">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_Delete_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 16:44:01.488" level="INFO">Set test documentation to:
+Executing_Delete_Testcase</msg>
+<status status="PASS" starttime="20221201 16:44:01.487" endtime="20221201 16:44:01.488"/>
+</kw>
+<kw name="Application_Details_Login_With_Application_Credentails:" library="site_details">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 16:44:01.493" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 16:44:01.490" endtime="20221201 16:44:12.056"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 16:44:12.056" endtime="20221201 16:44:12.202"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:uname</arg>
+<arg>${appuser}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:44:12.203" level="INFO">Typing text 'arapp' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 16:44:12.202" endtime="20221201 16:44:12.387"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:44:12.389" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 16:44:12.473" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 16:44:12.573" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 16:44:12.388" endtime="20221201 16:44:12.573"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 16:44:12.574" level="INFO">Clicking button 'xpath:/html/body/div/div[2]/div/form/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 16:44:12.573" endtime="20221201 16:44:18.979"/>
+</kw>
+<status status="PASS" starttime="20221201 16:44:01.489" endtime="20221201 16:44:18.979"/>
+</kw>
+<kw name="Application_Details:" library="site_details">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>arapp</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221201 16:44:19.016" level="INFO">Current page contains text 'arapp'.</msg>
+<status status="PASS" starttime="20221201 16:44:18.982" endtime="20221201 16:44:19.016"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[1]/aside/section/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:44:19.017" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/aside/section/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221201 16:44:19.017" endtime="20221201 16:44:20.759"/>
+</kw>
+<status status="PASS" starttime="20221201 16:44:18.981" endtime="20221201 16:44:20.759"/>
+</kw>
+<kw name="Application_details_for_Application_Management_Delete_option:" library="site_details">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>arapp</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221201 16:44:20.788" level="INFO">Current page contains text 'arapp'.</msg>
+<status status="PASS" starttime="20221201 16:44:20.761" endtime="20221201 16:44:20.788"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[1]/aside/section/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:44:20.789" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/aside/section/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221201 16:44:20.789" endtime="20221201 16:44:21.612"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:44:23.619" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:44:21.612" endtime="20221201 16:44:23.619"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[5]/section/div[3]/div/div/div/div[2]/div/table/tbody/tr/td[9]/button[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:44:23.624" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/section/div[3]/div/div/div/div[2]/div/table/tbody/tr/td[9]/button[3]'.</msg>
+<status status="PASS" starttime="20221201 16:44:23.622" endtime="20221201 16:44:23.773"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>DISMISS:cancel</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20221201 16:44:23.774" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221201 16:44:23.798" level="FAIL">UnexpectedAlertPresentException: Alert Text: Are you sure you want to delete the application?
+Message: unexpected alert open: {Alert text : Are you sure you want to delete the application?}
+  (Session info: chrome=107.0.5304.122)
+</msg>
+<status status="FAIL" starttime="20221201 16:44:23.780" endtime="20221201 16:44:23.802"/>
+</kw>
+<msg timestamp="20221201 16:44:23.802" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: UnexpectedAlertPresentException: Alert Text: Are you sure you want to delete the application?
+Message: unexpected alert open: {Alert text : Are you sure you want to delete the application?}
+  (Session info: chrome=107.0.5304.122)
+</msg>
+<msg timestamp="20221201 16:44:23.821" level="FAIL">ValueError: Invalid alert action 'DISMISS:CANCEL'.</msg>
+<status status="FAIL" starttime="20221201 16:44:23.774" endtime="20221201 16:44:23.822"/>
+</kw>
+<status status="FAIL" starttime="20221201 16:44:20.760" endtime="20221201 16:44:23.824"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Application_details_for_Application_Management_Delete_option</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20221201 16:44:23.825" endtime="20221201 16:44:23.826"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>ExecuteDeletepage</arg>
+<doc>Sets message for the current test case.</doc>
+<status status="NOT RUN" starttime="20221201 16:44:23.826" endtime="20221201 16:44:23.826"/>
+</kw>
+<doc>Executing_Delete_Testcase</doc>
+<tag>Application_details_for_Application_Management_Delete_option</tag>
+<status status="FAIL" starttime="20221201 16:44:01.485" endtime="20221201 16:44:23.828">ValueError: Invalid alert action 'DISMISS:CANCEL'.</status>
+</test>
+<test id="s1-t11" name="TC011:Verify_Appliaction_Details_Search_option:" line="82">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_Search_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 16:44:23.841" level="INFO">Set test documentation to:
+Executing_Search_Testcase</msg>
+<status status="PASS" starttime="20221201 16:44:23.840" endtime="20221201 16:44:23.841"/>
+</kw>
+<kw name="Application_Details_Login_With_Application_Credentails:" library="site_details">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 16:44:23.844" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 16:44:23.843" endtime="20221201 16:44:45.533"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 16:44:45.535" endtime="20221201 16:44:45.681"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:uname</arg>
+<arg>${appuser}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:44:45.682" level="INFO">Typing text 'arapp' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 16:44:45.681" endtime="20221201 16:44:45.961"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:44:45.962" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 16:44:46.059" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 16:44:46.173" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 16:44:45.961" endtime="20221201 16:44:46.173"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 16:44:46.174" level="INFO">Clicking button 'xpath:/html/body/div/div[2]/div/form/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 16:44:46.173" endtime="20221201 16:44:50.381"/>
+</kw>
+<status status="PASS" starttime="20221201 16:44:23.842" endtime="20221201 16:44:50.382"/>
+</kw>
+<kw name="Application_Details:" library="site_details">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>arapp</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221201 16:44:50.411" level="INFO">Current page contains text 'arapp'.</msg>
+<status status="PASS" starttime="20221201 16:44:50.385" endtime="20221201 16:44:50.411"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[1]/aside/section/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:44:50.411" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/aside/section/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221201 16:44:50.411" endtime="20221201 16:44:53.381"/>
+</kw>
+<status status="PASS" starttime="20221201 16:44:50.384" endtime="20221201 16:44:53.381"/>
+</kw>
+<kw name="Application_details_for_Application_Management_Search_option:" library="site_details">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>arapp</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221201 16:44:53.403" level="INFO">Current page contains text 'arapp'.</msg>
+<status status="PASS" starttime="20221201 16:44:53.383" endtime="20221201 16:44:53.404"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[5]/section/div[2]/div[1]/select</arg>
+<arg>61</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221201 16:44:53.404" level="INFO">Selecting options from selection list 'xpath:/html/body/div/div[5]/section/div[2]/div[1]/select' by value 61.</msg>
+<status status="PASS" starttime="20221201 16:44:53.404" endtime="20221201 16:44:53.640"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:44:55.642" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:44:53.641" endtime="20221201 16:44:55.642"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[5]/section/div[2]/div[2]/select</arg>
+<arg>46</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221201 16:44:55.643" level="INFO">Selecting options from selection list 'xpath:/html/body/div/div[5]/section/div[2]/div[2]/select' by value 46.</msg>
+<status status="PASS" starttime="20221201 16:44:55.643" endtime="20221201 16:44:55.753"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:44:57.767" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:44:55.753" endtime="20221201 16:44:57.767"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[5]/section/div[2]/div[3]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:44:57.768" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/section/div[2]/div[3]/button'.</msg>
+<status status="PASS" starttime="20221201 16:44:57.768" endtime="20221201 16:44:57.827"/>
+</kw>
+<status status="PASS" starttime="20221201 16:44:53.382" endtime="20221201 16:44:57.827"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Application_details_for_Application_Management_Search_option</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221201 16:44:57.828" level="INFO">Application_details_for_Application_Management_Search_option</msg>
+<status status="PASS" starttime="20221201 16:44:57.828" endtime="20221201 16:44:57.828"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>ExecuteSearchpage</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20221201 16:44:57.829" level="INFO">Set test message to:
+ExecuteSearchpage</msg>
+<status status="PASS" starttime="20221201 16:44:57.829" endtime="20221201 16:44:57.829"/>
+</kw>
+<doc>Executing_Search_Testcase</doc>
+<tag>Application_details_for_Application_Management_Search_option</tag>
+<status status="PASS" starttime="20221201 16:44:23.838" endtime="20221201 16:44:57.831">ExecuteSearchpage</status>
+</test>
+<test id="s1-t12" name="TC012:Verify_Application_Details_Sign_out:" line="91">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_Search_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 16:44:57.840" level="INFO">Set test documentation to:
+Executing_Search_Testcase</msg>
+<status status="PASS" starttime="20221201 16:44:57.839" endtime="20221201 16:44:57.841"/>
+</kw>
+<kw name="Application_Details_Login_With_Application_Credentails:" library="site_details">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 16:44:57.847" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 16:44:57.844" endtime="20221201 16:45:09.394"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 16:45:09.396" endtime="20221201 16:45:09.551"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:uname</arg>
+<arg>${appuser}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:45:09.552" level="INFO">Typing text 'arapp' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 16:45:09.551" endtime="20221201 16:45:09.733"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:45:09.734" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 16:45:09.788" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 16:45:09.879" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 16:45:09.733" endtime="20221201 16:45:09.879"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 16:45:09.880" level="INFO">Clicking button 'xpath:/html/body/div/div[2]/div/form/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 16:45:09.879" endtime="20221201 16:45:16.653"/>
+</kw>
+<status status="PASS" starttime="20221201 16:44:57.843" endtime="20221201 16:45:16.654"/>
+</kw>
+<kw name="Application_Details:" library="site_details">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>arapp</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221201 16:45:16.683" level="INFO">Current page contains text 'arapp'.</msg>
+<status status="PASS" starttime="20221201 16:45:16.655" endtime="20221201 16:45:16.683"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[1]/aside/section/ul/li[3]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:45:16.684" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/aside/section/ul/li[3]/a'.</msg>
+<status status="PASS" starttime="20221201 16:45:16.683" endtime="20221201 16:45:20.256"/>
+</kw>
+<status status="PASS" starttime="20221201 16:45:16.655" endtime="20221201 16:45:20.256"/>
+</kw>
+<kw name="Application_Details_Sign_out:" library="site_details">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>arapp</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221201 16:45:20.291" level="INFO">Current page contains text 'arapp'.</msg>
+<status status="PASS" starttime="20221201 16:45:20.259" endtime="20221201 16:45:20.292"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[1]/aside/section/ul/li[10]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:45:20.293" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/aside/section/ul/li[10]/a'.</msg>
+<status status="PASS" starttime="20221201 16:45:20.292" endtime="20221201 16:45:20.541"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:45:22.553" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:45:20.541" endtime="20221201 16:45:22.553"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[1]/div[4]/div/div/div[2]/div/div[2]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:45:22.556" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[4]/div/div/div[2]/div/div[2]/button'.</msg>
+<status status="PASS" starttime="20221201 16:45:22.554" endtime="20221201 16:45:22.748"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:45:24.756" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:45:22.748" endtime="20221201 16:45:24.756"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[1]/aside/section/ul/li[10]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:45:24.756" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/aside/section/ul/li[10]/a'.</msg>
+<status status="PASS" starttime="20221201 16:45:24.756" endtime="20221201 16:45:24.809"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:45:26.812" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:45:24.809" endtime="20221201 16:45:26.812"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div[1]/div[4]/div/div/div[2]/div/div[2]/a/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:45:26.815" level="INFO">Clicking element 'xpath:/html/body/div[1]/div[4]/div/div/div[2]/div/div[2]/a/button'.</msg>
+<status status="PASS" starttime="20221201 16:45:26.812" endtime="20221201 16:45:27.755"/>
+</kw>
+<status status="PASS" starttime="20221201 16:45:20.258" endtime="20221201 16:45:27.755"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Application_details_for_Application_Management_Search_option</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221201 16:45:27.757" level="INFO">Application_details_for_Application_Management_Search_option</msg>
+<status status="PASS" starttime="20221201 16:45:27.756" endtime="20221201 16:45:27.757"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>ExecuteSignoutpage</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20221201 16:45:27.758" level="INFO">Set test message to:
+ExecuteSignoutpage</msg>
+<status status="PASS" starttime="20221201 16:45:27.757" endtime="20221201 16:45:27.758"/>
+</kw>
+<doc>Executing_Search_Testcase</doc>
+<tag>Application_details_for_Application_Management_Search_option</tag>
+<status status="PASS" starttime="20221201 16:44:57.837" endtime="20221201 16:45:27.758">ExecuteSignoutpage</status>
+</test>
+<test id="s1-t13" name="TC013:Verify_Application_Management_In_Site_Details_Search_option:" line="100">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_Search_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 16:45:27.765" level="INFO">Set test documentation to:
+Executing_Search_Testcase</msg>
+<status status="PASS" starttime="20221201 16:45:27.764" endtime="20221201 16:45:27.766"/>
+</kw>
+<kw name="Application_Details_Login_With_Application_Credentails:" library="site_details">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 16:45:27.772" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 16:45:27.771" endtime="20221201 16:45:45.935"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 16:45:45.935" endtime="20221201 16:45:46.086"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:uname</arg>
+<arg>${appuser}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:45:46.087" level="INFO">Typing text 'arapp' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 16:45:46.086" endtime="20221201 16:45:46.257"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:45:46.259" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 16:45:46.310" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 16:45:46.393" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 16:45:46.259" endtime="20221201 16:45:46.393"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 16:45:46.394" level="INFO">Clicking button 'xpath:/html/body/div/div[2]/div/form/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 16:45:46.393" endtime="20221201 16:45:53.078"/>
+</kw>
+<status status="PASS" starttime="20221201 16:45:27.769" endtime="20221201 16:45:53.079"/>
+</kw>
+<kw name="Application_Management_In_Site_Details_Search_Option:" library="site_details">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>arapp</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221201 16:45:53.116" level="INFO">Current page contains text 'arapp'.</msg>
+<status status="PASS" starttime="20221201 16:45:53.083" endtime="20221201 16:45:53.116"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[1]/aside/section/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:45:53.117" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/aside/section/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20221201 16:45:53.116" endtime="20221201 16:45:56.171"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:45:58.186" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:45:56.172" endtime="20221201 16:45:58.187"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[5]/section/div[2]/div/select</arg>
+<arg>45</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221201 16:45:58.189" level="INFO">Selecting options from selection list 'xpath:/html/body/div/div[5]/section/div[2]/div/select' by value 45.</msg>
+<status status="PASS" starttime="20221201 16:45:58.187" endtime="20221201 16:45:58.492"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221201 16:45:58.493" endtime="20221201 16:46:00.801"/>
+</kw>
+<status status="PASS" starttime="20221201 16:45:53.081" endtime="20221201 16:46:00.802"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Application_details_for_Application_Management_Search_option</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221201 16:46:00.804" level="INFO">Application_details_for_Application_Management_Search_option</msg>
+<status status="PASS" starttime="20221201 16:46:00.803" endtime="20221201 16:46:00.804"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>ExecuteSignoutpage</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20221201 16:46:00.805" level="INFO">Set test message to:
+ExecuteSignoutpage</msg>
+<status status="PASS" starttime="20221201 16:46:00.805" endtime="20221201 16:46:00.806"/>
+</kw>
+<doc>Executing_Search_Testcase</doc>
+<tag>Application_Management_</tag>
+<status status="PASS" starttime="20221201 16:45:27.762" endtime="20221201 16:46:00.807">ExecuteSignoutpage</status>
+</test>
+<test id="s1-t14" name="TC014:Verify_Application_Management_In_Site_Details_View_option:" line="108">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_Search_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 16:46:00.816" level="INFO">Set test documentation to:
+Executing_Search_Testcase</msg>
+<status status="PASS" starttime="20221201 16:46:00.815" endtime="20221201 16:46:00.817"/>
+</kw>
+<kw name="Application_Details_Login_With_Application_Credentails:" library="site_details">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 16:46:00.822" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 16:46:00.820" endtime="20221201 16:47:50.296"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 16:47:50.296" endtime="20221201 16:47:50.581"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:uname</arg>
+<arg>${appuser}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:47:50.583" level="INFO">Typing text 'arapp' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 16:47:50.581" endtime="20221201 16:47:50.905"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:47:50.906" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 16:47:50.982" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 16:47:51.111" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 16:47:50.905" endtime="20221201 16:47:51.112"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 16:47:51.112" level="INFO">Clicking button 'xpath:/html/body/div/div[2]/div/form/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 16:47:51.112" endtime="20221201 16:48:01.104"/>
+</kw>
+<status status="PASS" starttime="20221201 16:46:00.819" endtime="20221201 16:48:01.105"/>
+</kw>
+<kw name="Application_Management_In_Site_Details_View_Option:" library="site_details">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>arapp</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221201 16:48:01.137" level="INFO">Current page contains text 'arapp'.</msg>
+<status status="PASS" starttime="20221201 16:48:01.114" endtime="20221201 16:48:01.137"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[1]/aside/section/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:48:01.138" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/aside/section/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20221201 16:48:01.138" endtime="20221201 16:48:04.595"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:48:06.607" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:48:04.595" endtime="20221201 16:48:06.607"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[5]/section/div[3]/div/div/div/div[2]/div/table/tbody/tr/td[8]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:48:06.608" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/section/div[3]/div/div/div/div[2]/div/table/tbody/tr/td[8]/button'.</msg>
+<status status="PASS" starttime="20221201 16:48:06.607" endtime="20221201 16:48:14.066"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:48:16.073" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:48:14.066" endtime="20221201 16:48:16.073"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[5]/section/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:48:16.074" level="INFO">Clicking element 'xpath:/html/body/div/div[5]/section/button'.</msg>
+<status status="PASS" starttime="20221201 16:48:16.074" endtime="20221201 16:48:19.122"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:48:21.138" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:48:19.122" endtime="20221201 16:48:21.138"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221201 16:48:21.139" endtime="20221201 16:48:23.435"/>
+</kw>
+<status status="PASS" starttime="20221201 16:48:01.112" endtime="20221201 16:48:23.435"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Application_details_for_Application_Management_Search_option</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221201 16:48:23.437" level="INFO">Application_details_for_Application_Management_Search_option</msg>
+<status status="PASS" starttime="20221201 16:48:23.437" endtime="20221201 16:48:23.438"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>ExecuteSignoutpage</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20221201 16:48:23.440" level="INFO">Set test message to:
+ExecuteSignoutpage</msg>
+<status status="PASS" starttime="20221201 16:48:23.439" endtime="20221201 16:48:23.440"/>
+</kw>
+<doc>Executing_Search_Testcase</doc>
+<tag>Application_Management_</tag>
+<status status="PASS" starttime="20221201 16:46:00.813" endtime="20221201 16:48:23.441">ExecuteSignoutpage</status>
+</test>
+<test id="s1-t15" name="TC015:Application_Management_In_Site_Details:" line="116">
+<kw name="Set Test Documentation" library="BuiltIn">
+<arg>Executing_Search_Testcase</arg>
+<doc>Sets documentation for the current test case.</doc>
+<msg timestamp="20221201 16:48:23.455" level="INFO">Set test documentation to:
+Executing_Search_Testcase</msg>
+<status status="PASS" starttime="20221201 16:48:23.454" endtime="20221201 16:48:23.455"/>
+</kw>
+<kw name="Application_Details_Login_With_Application_Credentails:" library="site_details">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20221201 16:48:23.459" level="INFO">Opening browser 'chrome' to base url 'https://iottez.com:8443/IOT_WEB_APP/'.</msg>
+<status status="PASS" starttime="20221201 16:48:23.458" endtime="20221201 16:48:43.187"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221201 16:48:43.188" endtime="20221201 16:48:43.340"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:uname</arg>
+<arg>${appuser}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:48:43.340" level="INFO">Typing text 'arapp' into text field 'id:uname'.</msg>
+<status status="PASS" starttime="20221201 16:48:43.340" endtime="20221201 16:48:43.508"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>id:pass</arg>
+<arg>${app_pass}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20221201 16:48:43.510" level="INFO">Typing password into text field 'id:pass'.</msg>
+<msg timestamp="20221201 16:48:43.564" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221201 16:48:43.653" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221201 16:48:43.509" endtime="20221201 16:48:43.653"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${submitbutton}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221201 16:48:43.654" level="INFO">Clicking button 'xpath:/html/body/div/div[2]/div/form/div[4]/div[2]/div/button'.</msg>
+<status status="PASS" starttime="20221201 16:48:43.654" endtime="20221201 16:48:58.076"/>
+</kw>
+<status status="PASS" starttime="20221201 16:48:23.457" endtime="20221201 16:48:58.077"/>
+</kw>
+<kw name="Application_Management_In_Site_Details_Search_Option:" library="site_details">
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>arapp</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20221201 16:48:58.106" level="INFO">Current page contains text 'arapp'.</msg>
+<status status="PASS" starttime="20221201 16:48:58.079" endtime="20221201 16:48:58.106"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[1]/aside/section/ul/li[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221201 16:48:58.107" level="INFO">Clicking element 'xpath:/html/body/div/div[1]/aside/section/ul/li[2]/a'.</msg>
+<status status="PASS" starttime="20221201 16:48:58.106" endtime="20221201 16:49:02.829"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221201 16:49:04.831" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20221201 16:49:02.830" endtime="20221201 16:49:04.831"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/div[5]/section/div[2]/div/select</arg>
+<arg>45</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20221201 16:49:04.834" level="INFO">Selecting options from selection list 'xpath:/html/body/div/div[5]/section/div[2]/div/select' by value 45.</msg>
+<status status="PASS" starttime="20221201 16:49:04.832" endtime="20221201 16:49:05.042"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20221201 16:49:05.042" endtime="20221201 16:49:07.421"/>
+</kw>
+<status status="PASS" starttime="20221201 16:48:58.078" endtime="20221201 16:49:07.422"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Application_details_for_Application_Management_Search_option</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20221201 16:49:07.424" level="INFO">Application_details_for_Application_Management_Search_option</msg>
+<status status="PASS" starttime="20221201 16:49:07.424" endtime="20221201 16:49:07.424"/>
+</kw>
+<kw name="Set Test Message" library="BuiltIn">
+<arg>ExecuteSignoutpage</arg>
+<doc>Sets message for the current test case.</doc>
+<msg timestamp="20221201 16:49:07.426" level="INFO">Set test message to:
+ExecuteSignoutpage</msg>
+<status status="PASS" starttime="20221201 16:49:07.426" endtime="20221201 16:49:07.426"/>
+</kw>
+<doc>Executing_Search_Testcase</doc>
+<tag>Application_Management_</tag>
+<status status="PASS" starttime="20221201 16:48:23.448" endtime="20221201 16:49:07.428">ExecuteSignoutpage</status>
+</test>
+<status status="FAIL" starttime="20221201 16:41:32.033" endtime="20221201 16:49:07.440"/>
+</suite>
+<statistics>
+<total>
+<stat pass="9" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">App_Details_case</stat>
+<stat pass="0" fail="1" skip="0">Application_details_for_Application_Management_Delete_option</stat>
+<stat pass="2" fail="0" skip="0">Application_details_for_Application_Management_Search_option</stat>
+<stat pass="3" fail="0" skip="0">Application_Management_</stat>
+<stat pass="1" fail="0" skip="0">Login_app_Details_case</stat>
+<stat pass="0" fail="1" skip="0">Login_Fota_case</stat>
+<stat pass="1" fail="0" skip="0">Login_site_Details_case</stat>
+<stat pass="0" fail="1" skip="0">Site_details_for_Site_Management_Delete_option</stat>
+<stat pass="0" fail="2" skip="0">Site_details_for_Site_Management_Edit_option</stat>
+<stat pass="1" fail="1" skip="0">Site_details_for_Site_Management_View_option</stat>
+</tag>
+<suite>
+<stat pass="9" fail="6" skip="0" id="s1" name="site details Test manage">site details Test manage</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20221201 16:44:01.458" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: UnexpectedAlertPresentException: Alert Text: Information has been updated successfully!
+Message: unexpected alert open: {Alert text : Information has been updated successfully!}
+  (Session info: chrome=107.0.5304.122)
+</msg>
+<msg timestamp="20221201 16:44:23.802" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: UnexpectedAlertPresentException: Alert Text: Are you sure you want to delete the application?
+Message: unexpected alert open: {Alert text : Are you sure you want to delete the application?}
+  (Session info: chrome=107.0.5304.122)
+</msg>
+</errors>
+</robot>
